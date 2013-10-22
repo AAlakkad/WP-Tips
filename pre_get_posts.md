@@ -4,7 +4,7 @@ You might use `pre_get_posts` action to add alter to the main query.
 
 But **Remember** to add the appropriate conditions before.
 
-*Note:* It's (recommended) [http://tommcfarlin.com/pre_get_posts-in-wordpress/] not to use `pre_get_posts`, but if you have to do it, do it in a right way!
+*Note:* It's [recommended](http://tommcfarlin.com/pre_get_posts-in-wordpress/) not to use `pre_get_posts`, but if you have to do it, do it in a right way!
 
 
 ###Example
