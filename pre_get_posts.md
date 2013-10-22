@@ -1,3 +1,5 @@
+##pre\_get\_post
+
 You might use `pre_get_posts` action to add some conditions to the main query.
 
 But **Remember** to add appropriate conditional tags.
