@@ -18,7 +18,7 @@ add_action('pre_get_posts', 'gallery_archive');
 
 function gallery_archive($query) {
 	if(is_post_type_archive( 'gallery' )) {
-		$category = get_aliqtisadi_category(true);
+		$category = get_my_category();
 		$query->set('category__in', $category);
 	}
 	return $query;
@@ -37,7 +37,7 @@ add_action('pre_get_posts', 'gallery_archive');
 
 function gallery_archive($query) {
 	if(is_post_type_archive( 'gallery' ) && !is_admin()) {
-		$category = get_aliqtisadi_category(true);
+		$category = get_my_category(true);
 		$query->set('category__in', $category);
 	}
 	return $query;
