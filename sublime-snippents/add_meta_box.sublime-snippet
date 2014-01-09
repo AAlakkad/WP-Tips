@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+add_action('add_meta_boxes', '${1:custom_add_meta_box}');
+function ${1:custom_add_meta_box}()
+{
+	\$screens = array( ${2:'post'} );
+
+    foreach ( \$screens as \$screen ) {
+
+        add_meta_box(
+            '${3:meta-box-id}',
+            '${4:Meta Box Title}',
+            '${5:meta_box_inner_function}',
+            \$screen
+        );
+    }
+}
+
+function ${5:meta_box_inner_function}()
+{
+	${7}
+}
+
+add_action('save_post', '${6:custom_meta_save_data}');
+function ${6:custom_meta_save_data}()
+{
+	${8}
+}
+${9}
+]]></content>
+	<tabTrigger>add_meta_box</tabTrigger>
+	<scope>source.php</scope>
+</snippet>
