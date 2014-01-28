@@ -11,7 +11,8 @@ function ${1:custom_add_meta_box}()
             '${3:meta-box-id}',
             '${4:Meta Box Title}',
             '${5:meta_box_inner_function}',
-            \$screen
+            \$screen,
+            'side'
         );
     }
 }
